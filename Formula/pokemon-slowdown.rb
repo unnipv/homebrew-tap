@@ -5,21 +5,21 @@
 class PokemonSlowdown < Formula
   desc "A calm, keyboard-first terminal client for Pokémon Showdown"
   homepage "https://github.com/unnipv/pokemon-slowdown"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/unnipv/pokemon-slowdown/releases/download/v0.2.0/pokemon-slowdown_0.2.0_darwin_amd64.tar.gz"
-      sha256 "e372f30815c3f4867fe7979401dbcc21fe2fc01adf11120405231e72496e932f"
+      url "https://github.com/unnipv/pokemon-slowdown/releases/download/v0.2.1/pokemon-slowdown_0.2.1_darwin_amd64.tar.gz"
+      sha256 "2cf4cb7d5f9981a356bfbd362ccf9b490fe59995f5f45e6e034ff7b8a3eb7dd2"
 
       define_method(:install) do
         bin.install "slowdown"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/unnipv/pokemon-slowdown/releases/download/v0.2.0/pokemon-slowdown_0.2.0_darwin_arm64.tar.gz"
-      sha256 "a321f7c95bdafc1364649a7706b86708a9d33f860dc464299962acbde0a19f3b"
+      url "https://github.com/unnipv/pokemon-slowdown/releases/download/v0.2.1/pokemon-slowdown_0.2.1_darwin_arm64.tar.gz"
+      sha256 "5351e528b0e61cd1a25cb669c6d0fc7f3e6674d54f0bde946ac50a721044a668"
 
       define_method(:install) do
         bin.install "slowdown"
@@ -29,15 +29,15 @@ class PokemonSlowdown < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unnipv/pokemon-slowdown/releases/download/v0.2.0/pokemon-slowdown_0.2.0_linux_amd64.tar.gz"
-      sha256 "9b4e23c37df3dd06d630a1df43c18653a661b5d08dbe18f2ea46abd39529ddd6"
+      url "https://github.com/unnipv/pokemon-slowdown/releases/download/v0.2.1/pokemon-slowdown_0.2.1_linux_amd64.tar.gz"
+      sha256 "1a104955a7636e7ef9c01ffdb7c9478577a4aba219efc1b57ceb8b8e3830c320"
       define_method(:install) do
         bin.install "slowdown"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/unnipv/pokemon-slowdown/releases/download/v0.2.0/pokemon-slowdown_0.2.0_linux_arm64.tar.gz"
-      sha256 "21066646628d1fd2eaa39bcee3d3a1985d9fec334c315edb1cc67b5caf79837b"
+      url "https://github.com/unnipv/pokemon-slowdown/releases/download/v0.2.1/pokemon-slowdown_0.2.1_linux_arm64.tar.gz"
+      sha256 "a3f7fe5cae711cb7d74d9b078f1d383b40824e2e8365a3ee96ae3957176955b5"
       define_method(:install) do
         bin.install "slowdown"
       end
